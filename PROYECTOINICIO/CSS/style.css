@@ -1,0 +1,969 @@
+:root {
+    --ColorPrincipal: #00e497;
+    --ColorSecundario: #02052f;
+    --FrontPrincipal: 'Open Sans', sans-serif;
+
+
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--FrontPrincipal);
+}
+
+
+
+
+
+
+
+
+/* Esto me hace que la relación entre rem y px sea irem=10px */
+
+.contenedor {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media(max-width: 1140px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+.video {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+
+.video iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 625px;
+}
+
+
+
+
+.localizaciones {
+    background-color: var(--ColorSecundario);
+    margin-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+
+.Localizaciones h2,
+.localizaciones h3,
+.localizaciones p {
+    color: white;
+}
+
+.loca {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loca div {
+    flex: 25%;
+    max-width: 25%;
+    padding-right: 15px;
+}
+
+.Localizaciones h2 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.localizaciones h3 {
+    margin: bottom 0px;
+    padding-bottom: 0px;
+}
+
+.localizaciones p {
+    margin: bottom 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+@media(max-width:1140px) {
+    .ciudadeslocalizaciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .ciudadeslocalizaciones div {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .ciudadeslocalizaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .ciudadeslocalizaciones div {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+.seccioncontacto {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    background-color: var(--ColorPrincipal);
+}
+
+.seccioncontacto h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.seccioncontacto h2 {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.contenedorcontacto div {
+    flex: 50%;
+    max-width: 50%;
+    background-color: white;
+    padding: 25px 40px 40px 40px;
+    border-radius: 2.5px;
+}
+
+.contenedorcontacto p {
+    color: var(--ColorSecundario);
+    font-weight: 800;
+}
+
+.contenedorcontacto {
+    display: flex;
+}
+
+.contenedorcontacto a {
+    color: var(--ColorPrincipal);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.contenedorcontacto a:hover {
+    text-decoration: underline;
+}
+
+.contacto1::before {
+    content: url(../img/ico-EMAIL.png);
+
+}
+
+.contacto2::before {
+    content: url(../img/ico-TLF.png);
+}
+
+.contacto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+.menufooter {
+    padding-top: 50px 0px;
+    border-bottom: 1px solid var(--ColorSecundario);
+}
+
+.menufooter {
+    font-weight: 800;
+    font: size 17px;
+    padding-right: 60px;
+    color: var(--ColorSecundario);
+}
+
+.PaginasLegales {
+    margin-bottom: 40px;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--ColorSecundario);
+}
+
+.paglegal a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #02052F;
+    padding-right: 50px;
+}
+
+.paglegal:hover {
+    color: #0056b3;
+}
+
+
+.BotonFijoInformate {
+    position: fixed;
+    right: 0px;
+    top: 320px;
+}
+
+.uptop {
+    position: fixed;
+    right: 40px;
+    bottom: 75px;
+}
+
+.uptop img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+
+
+.separador {
+    margin: 0px 5px 0px 5px;
+}
+
+.Login {
+    color: #00E497;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 24px;
+
+}
+
+.Login {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 24px;
+}
+
+.Login a {
+    color: var(--ColorPrincipal);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.Login a :hover {
+    text-decoration: underline;
+}
+
+.Informate {
+    color: white;
+    font-family: var(--FrontPrincipal);
+    font-size: 14px;
+    background-color: var(--ColorPrincipal);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 700;
+
+}
+
+.Informate:hover {
+    background: #17a2b8;
+}
+
+.MenuPrincipal {
+    display: flex;
+}
+
+.menuimagen {
+    display: flex;
+    flex: 34%;
+    max-width: 34%;
+    justify-content: flex-start;
+}
+
+.menuenlaces .Informate:hover {
+    text-decoration: underline;
+    display: flex;
+    flex: 34%;
+    max-width: 34%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+@media(max-width:768px) {
+    .menuimagen {
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .menuenlaces {
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .MenuPrincipal {
+        flex-wrap: wrap;
+    }
+
+    .menuenlaces {
+        margin: 0px 0px 0px 0px;
+        border-top: 1px solid var(--ColorSecundario);
+        padding-top: 10px 0px;
+        display: block;
+
+    }
+}
+
+.menuenlaces a {
+    margin-left: 10px;
+}
+
+@media(max-width:1140px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .titulo h1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .titulostrong {
+        font-size: 3.7rem;
+    }
+}
+
+.menuenlaces a:hover {
+    text-decoration: underline;
+
+}
+
+.Titulo {
+    color: var(--ColorPrincipal);
+    display: flex;
+    flex-direction: column;
+    flex: 76%;
+    max-width: 76%;
+
+}
+
+.Titulo strong {
+    color: var(--ColorSecundario);
+    font-family: var(--FrontPrincipal);
+    font-size: 47px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: left;
+    display: block;
+    padding: 3px 15px;
+    max-width: fit-content;
+
+}
+
+@media(max-width:1140px) {
+    .Titulo {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .titulostrong {
+        font-size: 3.7rem;
+    }
+}
+
+@media() {}
+
+.cursos {
+    color: #fff;
+    border: 2px solid #02052F;
+    background: #02052F;
+    border-radius: 10px;
+    font-family: "DinBold", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2.4rem 9.4rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.cursos:hover {
+    color: var(--ColorSecundario);
+    border: 2px solid var(--ColorSecundario);
+    background: #FFFFFF;
+
+}
+
+.primeraseccion {
+    padding-bottom: 60px;
+    background-image: url(../img/imagen\ chicos.png);
+    background-position: top left;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 180px;
+
+}
+
+.imgverde {
+    background-image: url(../img/imagen\ chicos.png);
+    background-position: top left;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+
+
+
+
+
+
+
+
+.logo1 {
+    max-width: 70%;
+    flex: 70%;
+}
+
+.logo2 {
+    max-height: 30%;
+    margin: 30px;
+    flex: 30%;
+}
+
+.Logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin-top: -100px;
+    background: #FFFFFF;
+}
+
+
+
+
+
+.Localizaciones {
+    display: inline;
+}
+
+.ciudades a {
+    color: white;
+    background-color: var(--ColorPrincipal);
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+
+}
+
+.ciudades h3,
+.ciudades h2 {
+    font-weight: 800;
+    font-family: var(--ColorPrincipal);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ciudades h3 {
+    color: var(--ColorPrincipal);
+    font-family: var(--FrontPrincipal);
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    padding: 40px 0px;
+
+}
+
+.ciudades h2 {
+    font-family: var(--FrontPrincipal);
+    color: var(--ColorSecundario);
+    font-size: 17px;
+    padding: 40px;
+}
+
+.ciudades a {
+    background-color: white;
+    color: var(--ColorSecundario);
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 0.5rem;
+    border: 1px solid var(--ColorPrincipal)
+}
+
+.ciudades .vertodo {
+    background-color: var(--ColorPrincipal);
+    color: white;
+}
+
+.ciudades a:hover {
+    background-color: var(--ColorPrincipal);
+    color: white;
+}
+
+.ciudades .vertodo:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inscribir .programacion {
+    background-image: url(../img/Curso-programacion-web-full-stack-norte.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 15px;
+
+}
+
+.inscribir .Marketing {
+    background-image: url(../img/Curso-marketing-digital-norte.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 15px;
+}
+
+.inscribir {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+.inscribir a {
+    padding: 20px 44px;
+    background-color: white;
+    border: 2px solid white;
+    font-family: "DinBold", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--ColorSecundario);
+    border-radius: 10px;
+    text-transform: uppercase;
+    max-width: fit-content;
+    margin-top: 80px;
+    text-decoration: none;
+    border: 2px solid white;
+
+}
+
+.inscribir div {
+    border-radius: 10px;
+    padding: 40px 60px;
+    flex-direction: column;
+    flex: 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inscribir a:hover {
+    color: white;
+    background-color: var(--ColorPrincipal);
+}
+
+.inscribir h2 {
+    font-size: 2.7rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width:1140px) {
+    .inscribir a {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:760px) {
+    .inscribir {
+        flex-direction: column;
+    }
+
+    .inscribir div {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+.curso2 .interesa {
+    margin-bottom: 0.5rem;
+    font-family: var(--FrontPrincipal);
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--ColorSecundario);
+    text-align: center;
+}
+
+.pide a {
+    background-color: var(--ColorPrincipal);
+    color: white;
+    font-weight: 700;
+    float: none;
+    padding: 20px 40px;
+    border-radius: 96px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+
+.pide a:hover {
+    text-decoration: underline;
+    background-color: var(--ColorSecundario);
+
+}
+
+.curso2 .pide {
+    justify-content: center;
+    display: flex;
+}
+
+
+.secciontexto {
+    display: flex;
+}
+
+.secciontexto div {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.textoizq h3 {
+    color: var(--ColorPrincipal);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.textoizq h2 {
+    color: var(--ColorSecundario);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.textoizq p {
+    color: var(--ColorSecundario);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.textoizq h4 {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ColorSecundario);
+}
+
+.textoizq .primerenlace {
+    color: var(--ColorPrincipal);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.textoizq .infografia {
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.segundoenlace {
+    background-color: var(--ColorSecundario);
+    border: 2px solid var(--ColorSecundario);
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+.segundoenlace:hover {
+    background-color: var(--ColorPrincipal);
+    color: var(--ColorSecundario);
+}
+
+.textoder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.textoder h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.textoder p {
+    background-color: var(--ColorSecundario);
+    padding: 3px 15px;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+.textoder a {
+    background-color: var(--ColorPrincipal);
+    max-width: 60%;
+    text-align: center;
+    color: var(--ColorSecundario);
+    font-weight: 800;
+    padding: 13px 40px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid var(--ColorSecundario);
+}
+
+.textoder a:hover {
+    color: white;
+    background-color: var(--ColorSecundario);
+}
+
+@media(max-width:1140px) {
+    .secciontexto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+    }
+
+    .secciontexto div {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .segundoenlace {
+        display: block;
+        text-align: center;
+    }
+
+    .textoder {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.ejercicioGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hijo1{
+    background-color: red;
+    height: 500px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+}
+
+.hijo2{
+    background-color: green;
+    height: 500px;
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+.hijo3{
+    background-color: blue;
+    height: 500px;
+    grid-row: 2/3;
+    grid-column: 3/5;
+}
+ */
+
+.ejercicioGrid {
+    display: grid;
+    grid-template-rows: 200px 600px 200px;
+    grid-template-columns: 10% 40% 20% 20% 10%;
+}
+
+.hijo1 {
+    background-color: red;
+    grid-row: 1;
+    grid-column: 2/4;
+
+}
+
+.hijo2 {
+    background-color: green;
+    grid-row: 2/4;
+    grid-column: 4/6;
+}
+
+.hijo3 {
+    background-color: blue;
+    grid-row: 2/4;
+    grid-column: 1;
+}
+
+
+.seccionfija {
+    background-color: var(--ColorPrincipal);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+@media(min-width:768px) {
+    .seccionfija {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .ejboxmodel {
+    height: 500px;
+    margin: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: red;
+    position: relative;
+    background-image: linear-gradient(to top, red 0%, blue 100%);
+    on:relative
+    :adow: 14px 26px 21px 
+}
+
+.html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.ejboxmodel h2::after{
+    content: "añadido desde css, no se puede copiar";
+}
+
+.ejboxmodel h2{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (min-width:750px){
+    body {
+        background-color:yellow;
+    }
+        
+}
+@media (min-width:900px){
+    body {
+        background-color:red;
+    }
+        
+}
+
+@media (min-width:480px){
+    body {
+        background-color:blue;
+    }
+        
+} cambio de color cuando se amplia la resolucion */
